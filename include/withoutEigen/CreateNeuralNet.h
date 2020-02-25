@@ -1,8 +1,8 @@
  
 #include <string>
-#include <helper_functions.h>
-#include <matrixOperations.h>
-#include <optimizers.h>
+#include <withoutEigen/helper_functions.h>
+#include <withoutEigen/matrixOperations.h>
+#include <withoutEigen/optimizers.h>
 #include <memory>
 
 using std::vector;
