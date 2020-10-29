@@ -40,7 +40,6 @@ endif()
 
 
 INCLUDE_DIRECTORIES("${PROJECT_INCLUDE_DIRS}" "${EIGEN_SRC_PATH}")
-
 FIND_PACKAGE (Doxygen)
 IF (DOXYGEN_FOUND)
     MESSAGE("Build documentation with: make docs")
@@ -60,5 +59,12 @@ IF (DOXYGEN_FOUND)
 ELSE (DOXYGEN_FOUND)
     ADD_CUSTOM_TARGET(docs COMMENT "Doxygen not found. Please install doxygen to use this target." VERBATIM)
 ENDIF (DOXYGEN_FOUND)
+INCLUDE_DIRECTORIES("${PROJECT_INCLUDE_DIRS}" "${EIGEN_SRC_PATH}")
+
+
+option(TESTS "Build the test" OFF)
+if(TESTS)
+   add_subdirectory(tests)
+endif(TESTS)
 
 add_subdirectory(examples)
