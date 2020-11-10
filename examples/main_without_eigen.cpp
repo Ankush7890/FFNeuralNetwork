@@ -1,3 +1,4 @@
+#include <NNConfig.h>
 #include <vector>
 #include <iostream>
 
@@ -6,7 +7,7 @@
 #include "stdint.h"
 #include <fstream>
 #include <string>
-#include <CreateNeuralNet.h>
+#include <withoutEigen/CreateNeuralNet.h>
 #include <chrono> 
 using std::string;
 using namespace std::chrono;

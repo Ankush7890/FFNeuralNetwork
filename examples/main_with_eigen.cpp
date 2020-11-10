@@ -7,11 +7,7 @@
 #include "stdint.h"
 #include <fstream>
 #include <string>
-#ifdef WITHOUTEIGEN
-#include <withoutEigen/CreateNeuralNet.h>
-#else
 #include <withEigen/CreateNeuralNet.h>
-#endif
 #include <chrono> 
 
 using std::string;
