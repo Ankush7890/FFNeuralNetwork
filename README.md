@@ -44,4 +44,20 @@ In case you only want the version with the with the eigen integeration. Add the 
     cmake -DWITHOUTEIGEN=OFF . ..
     make
 ````
+If you also want to compile and run the tests, also add this -DTESTS=ON. This option needs internet access, because the process will download the googletest library.
 
+# Getting started.
+
+Please refer to some of examples provided along this package. These examples illustrate a way on how to create an architect for the neural network, and train it on a dataset. You might need to download the [iris dataset]( https://archive.ics.uci.edu/ml/datasets/iris ) from University of California Irvine dataset repository to see these examples play. Please refer to the documentation for further information.
+
+# Build the documentation.
+
+- Install doxygen 
+- To build the documentation.
+
+````sh
+    mkdir build
+    cd build
+    cmake ..
+    make docs
+````

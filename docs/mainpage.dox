@@ -3,5 +3,6 @@
 
 @section intro Introduction
 
-hello
+Please refer to some of examples provided along this package. These examples illustrate a way on how to create an architect for the neural network, and train it on a dataset. You might need to download the iris dataset from University of California Irvine dataset repository to see these examples play. Please refer to the documentation of all the functions and classes by using the Classes dropdown option for further information.
+
 */
