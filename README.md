@@ -1,5 +1,7 @@
 # Feed Forward Neural Network from scratch
 
+This project has been implemented using two ways.
+
 - withEigen: Using Eigen library [ Eigen ]
 - withoutEigen: This part is based on vector library in std namespace [ std::vector ]
 
@@ -37,7 +39,7 @@ Please look at the documentation for further details.
     make
     make install (optional)
 ````
-In case you only want the version with the with the eigen integeration. Add the following flag.
+In case, build is required for the version with the eigen integeration. Add the following flag.
 ````sh
     mkdir build
     cd build
